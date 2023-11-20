@@ -46,6 +46,40 @@ print(numeros3Array)
 print("-------------------------------------")
 
 // 6- Crear un diccionario (array clave-valor) que simule una plantilla de fútbol, la clave será el dorsal y el valor será el nombre del jugador.
+print("--------- EJERCICIO 6 -----------")
+var plantilla = [1: "Casillas", 2: "Ramos", 3: "Pique", 4: "Puyol", 5: "Capdevila", 6: "Xabi Alonso", 7: "Villa", 8: "Xavi Hernandez", 9: "Torres", 10: "Fabregas", 11: "Pedrito"]
+print(plantilla)
+print("-------------------------------------")
+
+// 7- Convertir los valores de la plantilla de fútbol anterior a un array.
+print("--------- EJERCICIO 7 -----------")
+var plantillaArray = Array(plantilla.values)
+print(plantillaArray)
+print("-------------------------------------")
+
+//8- Convertir los dorsales de la plantilla de fútbol anterior a un array.
+print("--------- EJERCICIO 8 -----------")
+var plantillaArray2 = Array(plantilla.keys)
+print(plantillaArray2)
+print("-------------------------------------")
+
+// 9- Queremos crear un diccionario cuya clave sea el nombre de un equipo de fútbol y los valores sean la plantilla de futbol asociada, es decir, tendrá todos los jugadores con su dorsal y su nombre.
+print("--------- EJERCICIO 9 -----------")
+var madrid = [1: "Courtois", 2: "Carvajal", 3: "E.Militão", 4: "Alaba", 5: "Bellingham", 6: "Nacho", 7: "Vini JR.", 8: "Kroos", 19: "D.Ceballos", 10: "Modric", 11: "Rodrygo"]
+var barcelona = [1: "Marc-André", 2: "João Cancelo", 3: "Alejandro Balde", 4: "Araujo", 5: "Íñigo Martínez", 6: "Gavi", 7: "Ferran Torres", 8: "Pedri", 9: "Robert Lewandonwski", 20: "Sergio Roberto", 11: "Raphinha"]
+var equipos = ["Real Madrid": madrid, "Barcelona": barcelona]
+print(equipos)
+print("-------------------------------------")
+
+//10- Queremos imprimir todas los jugadores y sus dorsales de todos los equipos del ejercicio anterior.
+print("--------- EJERCICIO 10 -----------")
+for equipo in equipos {
+    print("Equipo: \(equipo.key)")
+    for jugador in equipo.value {
+        print("Dorsal: \(jugador.key) - Nombre: \(jugador.value)")
+    }
+}
+print("-------------------------------------")
 
 
 
